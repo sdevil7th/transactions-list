@@ -1,0 +1,76 @@
+@import "../constants.scss";
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 80%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.table-name {
+  font-weight: 700;
+}
+
+.table-header,
+.table-footer {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  > div {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.search-input {
+  position: relative;
+  svg {
+    color: $border-color;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.toggle-buttons {
+  margin-left: 20px;
+  padding: 5px;
+  border: 1px solid $border-color;
+  border-radius: 50px;
+  button {
+    padding: 5px 10px;
+    border-radius: 50px;
+    background: none;
+    border: 0;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  button.active {
+    background: $primary-blue;
+    color: $white-font-color;
+  }
+}
+.page-jumper {
+  span {
+    color: $grey-font-color;
+    font-size: 14px;
+  }
+  input {
+    width: 40px;
+    padding: 3px 5px;
+    margin: 0 10px;
+    font-weight: 700;
+  }
+}

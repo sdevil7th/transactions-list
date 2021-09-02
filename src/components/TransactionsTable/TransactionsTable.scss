@@ -1,0 +1,42 @@
+@import "../../constants.scss";
+
+.table-wrapper.infinite {
+  display: block;
+  max-height: 70vh;
+  overflow-y: scroll;
+}
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+
+  thead {
+    background: $grey-accent-color;
+  }
+  th {
+    padding: 10px 20px;
+    color: $grey-font-color;
+    font-weight: 500;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  td {
+    font-weight: 700;
+    padding: 15px 20px;
+    border-bottom: 1px solid $border-color;
+    div {
+      display: flex;
+      align-items: center;
+      span {
+        margin-left: 5px;
+      }
+    }
+  }
+  tbody tr {
+    &:hover {
+      background: $grey-accent-color;
+      cursor: pointer;
+    }
+  }
+}

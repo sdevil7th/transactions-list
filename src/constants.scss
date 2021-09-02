@@ -1,0 +1,60 @@
+$primary-blue: #0283ff;
+$background-color: #fdfeff;
+$black-font-color: #282828;
+$white-font-color: #ffffff;
+$grey-font-color: #606d7c;
+$grey-accent-color: #ecf2f9;
+$border-color: #d3dde9;
+
+$layout-space-x: 40px;
+$layout-space-x1: 20px;
+
+$sidebar-width: 300px;
+$sidebar-width-small: 200px;
+
+$min-table-width: 300px;
+
+$layout-space-y: 20px;
+$layout-space-y1: 40px;
+$layout-space-y2: 80px;
+$layout-space-y3: 60px;
+
+$border-radius: 8px;
+
+$caption-font-size: 14px;
+$body-font-size: 16px;
+$grid-font-size: 16px;
+$header-font-szie: 24px;
+
+$lighter-font-weight: 100;
+$light-font-weight: 300;
+$regular-font-weight: 400;
+$medium-font-weight: 500;
+$bold-font-weight: 700;
+
+$mid-breakpoint: 820px;
+
+@mixin create-font($fontSize, $fontWeight) {
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+}
+
+@mixin body-font {
+  @include create-font($body-font-size, $regular-font-weight);
+}
+
+@mixin sidebar-nav-font {
+  @include create-font($body-font-size, $medium-font-weight);
+}
+
+@mixin header-font {
+  @include create-font($header-font-size, $medium-font-weight);
+}
+
+@mixin grid-font {
+  @include create-font($grid-font-size, $medium-font-weight);
+}
+
+@mixin caption-font {
+  @include create-font($caption-font-size, $light-font-weight);
+}
